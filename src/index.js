@@ -15,10 +15,11 @@ class Square extends React.Component {
       <button
         className="square"
         onClick={()=> {
+          this.setState({value: 'X'});
           console.log("i did a clickeroo");
         }}
       >
-        {this.props.value}
+        {this.state.value}
       </button>
     );
   }
