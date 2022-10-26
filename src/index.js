@@ -103,7 +103,7 @@ function calculateWinnrt(squares) {
 
   for (let i = 0; i < winningLines.length; i++) {
     const [a, b, c] = winningLines[i];
-    if (squares[i] && squares[a] === squares[b] && squares[b] === squares[c]) {
+    if (squares[a] && squares[a] === squares[b] && squares[b] === squares[c]) {
       return squares[a];
     }
   }
